@@ -103,7 +103,8 @@ public class CustomTabsModule extends ReactContextBaseJavaModule {
             );
             final Activity activity = getCurrentActivity();
             if (activity != null) {
-                CustomTabsLauncher.launch(activity, customTabsIntent, url);
+                Uri myUri = Uri.parse(url)
+                CustomTabsLauncher.launch(activity, customTabsIntent, myUri);
                 promise.resolve(true);
             } else {
                 promise.resolve(false);
