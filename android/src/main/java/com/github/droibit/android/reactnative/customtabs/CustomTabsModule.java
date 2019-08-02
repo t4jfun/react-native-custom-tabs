@@ -180,7 +180,7 @@ public class CustomTabsModule extends ReactContextBaseJavaModule {
                   customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                   customTabsIntent.intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         }
-        
+
         return customTabsIntent;
     }
 
